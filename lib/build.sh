@@ -130,3 +130,8 @@ install_sass() {
     cp -r $build_dir/.gem $cache_dir/ruby
   fi
 }
+
+install_elm() {
+    info "Installing elm"
+    npm install -g elm
+}

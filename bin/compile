@@ -29,6 +29,9 @@ download_node
 install_node
 install_npm
 
+head "Installing Elm"
+install_elm
+
 head "Installing Sass/Compass"
 install_sass
 
