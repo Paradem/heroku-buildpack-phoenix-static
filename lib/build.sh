@@ -90,6 +90,7 @@ run_compile() {
     source $custom_compile 2>&1 | indent
   else
     info "Running default compile"
+    info pwd
     source ${build_pack_dir}/${compile} 2>&1 | indent
   fi
 }
