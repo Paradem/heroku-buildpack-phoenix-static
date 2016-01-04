@@ -17,7 +17,10 @@ mkdir -p $heroku_dir/node
 source ${build_pack_dir}/lib/common.sh
 source ${build_pack_dir}/lib/build.sh
 
-info $2
+head "Directories"
+info $build_dir
+info $cache_dir
+info $env_dir
 
 old_npm=$(file_contents "$cache_dir/npm-version")
 old_node=$(file_contents "$cache_dir/node-version")
