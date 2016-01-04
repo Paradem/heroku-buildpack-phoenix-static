@@ -132,6 +132,5 @@ install_sass() {
 }
 
 install_elm() {
-    info "Installing elm"
     npm install -g elm
 }
