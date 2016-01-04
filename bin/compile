@@ -2,7 +2,7 @@
 
 build_pack_dir=$(cd $(dirname $(dirname $0)); pwd)
 
-info $2
+
 # Ensure dirs are present
 mkdir -p $1 $2 $3
 
@@ -14,6 +14,8 @@ mkdir -p $heroku_dir/node
 
 source ${build_pack_dir}/lib/common.sh
 source ${build_pack_dir}/lib/build.sh
+
+info $2
 
 old_npm=$(file_contents "$cache_dir/npm-version")
 old_node=$(file_contents "$cache_dir/node-version")
