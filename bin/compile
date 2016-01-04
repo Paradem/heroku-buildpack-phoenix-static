@@ -2,6 +2,7 @@
 
 build_pack_dir=$(cd $(dirname $(dirname $0)); pwd)
 
+info $2
 # Ensure dirs are present
 mkdir -p $1 $2 $3
 
