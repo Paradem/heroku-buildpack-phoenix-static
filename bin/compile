@@ -41,7 +41,8 @@ head "Installing Sass/Compass"
 install_sass
 
 head "Building dependencies"
-install_and_cache_deps
+install_and_cache_npm_deps
+
 compile
 
 head "Finalizing build"
